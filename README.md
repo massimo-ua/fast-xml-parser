@@ -21,7 +21,6 @@ To cover expenses, we're planning to launch [FXP Enterprise](https://github.com/
 <a href="https://opencollective.com/fast-xml-parser/donate" target="_blank">
   <img src="https://opencollective.com/fast-xml-parser/donate/button@2x.png?color=blue" width=200 />
 </a>
-<a href="https://www.patreon.com/bePatron?u=9531404" data-patreon-widget-type="become-patron-button"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" width="200" /></a>
 <a href="https://paypal.me/naturalintelligence"> <img src="static/img/support_paypal.svg" alt="Stubmatic donate button" width="200"/></a>
 
 ## Users
@@ -104,13 +103,19 @@ The list of users is collected either from the list published by Github, cummuni
 
 ## How to use
 
-To use it in **NPM package**  install it first
+### Installation
 
-`$npm install fast-xml-parser` or using [yarn](https://yarnpkg.com/) `$yarn add fast-xml-parser`
+To use it as an **NPM package**:
+
+`npm install fast-xml-parser`
+
+Or using [yarn](https://yarnpkg.com/):
+
+`yarn add fast-xml-parser`
 
 To use it from a **CLI** install it globally with the `-g` option.
 
-`$npm install fast-xml-parser -g`
+`npm install fast-xml-parser -g`
 
 To use it on a **webpage** include it from a [CDN](https://cdnjs.com/libraries/fast-xml-parser)
 
@@ -142,7 +147,7 @@ var options = {
       hex: true,
       leadingZeros: true,
       //skipLike: /\+[0-9]{10}/
-    }
+    },
     arrayMode: false, //"strict"
     attrValueProcessor: (val, attrName) => he.decode(val, {isAttributeValue: true}),//default is a=>a
     tagValueProcessor : (val, tagName) => he.decode(val), //default is a=>a
